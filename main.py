@@ -5,15 +5,17 @@ import threading
 import time
 
 from vk_api import VkApi
+from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 
 from flask import Flask
-from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
+
 
 params = argparse.ArgumentParser()
 params.add_argument('--heroku', action='store_true')
 args = params.parse_args()
 
 app = Flask(__name__)
+
 
 ID, TOKEN = '203807582', \
             '8728ab818c22fe2cbacd1370f2eb67e96ee4be6eac98819ca366b0a1d09be8259f70197206b9b47b0dc7e'
