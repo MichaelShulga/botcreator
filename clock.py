@@ -11,16 +11,6 @@ ID, TOKEN = '203807582', \
             '8728ab818c22fe2cbacd1370f2eb67e96ee4be6eac98819ca366b0a1d09be8259f70197206b9b47b0dc7e'
 
 
-# @sched.scheduled_job('interval', minutes=1)
-# def timed_job():
-#     vk_session = vk_api.VkApi(
-#         token=TOKEN)
-#     vk = vk_session.get_api()
-#     vk.messages.send(user_id='315336001',
-#                      message="Heroku test",
-#                      random_id=random.randint(0, 2 ** 64))
-
-
 def main():
     vk_session = vk_api.VkApi(
         token=TOKEN)
