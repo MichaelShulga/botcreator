@@ -1,1 +1,2 @@
-worker: python main.py
+web: python main.py --heroku
+clock: python clock.py
