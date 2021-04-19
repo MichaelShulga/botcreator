@@ -9,9 +9,9 @@ TOKEN = '21b426f2c33e1a65bbc8807ab67ff4d282e026b4b79e9d4b1e33f20f7a0072e137f4e77
 class ClientGroup(VkGroup):
     def if_new_message(self, message, from_id, event):
         if message == 'Привет':
-            answer = 'Ку'
+            answer = 'Привет'
         else:
-            answer = 'Пошел в жопу'
+            answer = 'Не привет'
         self.send_message(to_id=from_id, message=answer)
 
     def own_handler(self, event):
